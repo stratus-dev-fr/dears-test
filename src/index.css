@@ -1,13 +1,162 @@
+@font-face {
+  font-family: "SF Display Black";
+  font-weight: 900;
+  src: url("./assets/fonts/SF-UI-Display-Black.otf");
+}
+
+@font-face {
+  font-family: "SF Display Bold";
+  font-weight: 700;
+  src: url("./assets/fonts/SF-UI-Display-Bold.otf");
+}
+
+@font-face {
+  font-family: "SF Display Heavy";
+  font-weight: 800;
+  src: url("./assets/fonts/SF-UI-Display-Heavy.otf");
+}
+
+@font-face {
+  font-family: "SF Display Semibold";
+  font-weight: 600;
+  src: url("./assets/fonts/SF-UI-Display-Semibold.otf");
+}
+
+@font-face {
+  font-family: "SF Display Regular";
+  font-weight: 400;
+  src: url("./assets/fonts/SF-UI-Display-Regular.otf");
+}
+
+@font-face {
+  font-family: "SF Display Light";
+  font-weight: 200;
+  src: url("./assets/fonts/SF-UI-Text-Light.otf");
+}
+
+@font-face {
+  font-family: "SF Display Light Italic";
+  font-weight: 200;
+  font-style: italic;
+  src: url("./assets/fonts/SF-UI-Text-LightItalic.otf");
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  width: 100vw;
+}
+
+header.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  height: 100vh;
+}
+
+header.test-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 300vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+}
+
+header.test-scroll img {
+  width: 25vw;
+}
+
+header.projects {
+  background-color: #0f0f0f;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.navbar img {
+  width: 25vw;
+  margin: 20px 30px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  width: 30%;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.navbar ul > .direction {
+  transition: .5s;
+
+  font-family: 'SF Display Black';
+  text-decoration: none;
+  color: #ffffffbf;
+  list-style: none;
+  font-size: 50px;
+
+  margin: 10px 30px;
+}
+
+.navbar ul > .direction:hover {
+  transition: .5s;
+
+  cursor: pointer;
+  color: white;
+
+  margin: 10px 45px;
+}
+
+#three {
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+.word {
+  display: flex;
+  flex-direction: row;
 }
